@@ -1,0 +1,44 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.axisapps</groupId>
+  <artifactId>oxygen-icons5-pack</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+ 
+  <name>Oxygen Icons Thumbnails Pack</name>
+  <description>Oxygen icon theme as a jar dependency. Project forked from https://github.com/KDE/oxygen-icons5/</description>
+  <url>https://github.com/lsliwko/oxygen-icons5-pack</url>
+ 
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License, Version 2.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/lsliwko/oxygen-icons5-pack.git</connection>
+    <developerConnection>scm:git:https://github.com/lsliwko/oxygen-icons5-pack.git</developerConnection>
+    <url>https://github.com/lsliwko/oxygen-icons5-pack/tree/${project.scm.tag}</url>
+    <tag>master</tag>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.png</include>
+          <include>**/*.jpg</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+
+</project>

@@ -1,7 +1,5 @@
-# Oxygen Icons
+# Oxygen Icons Thumbnails Pack
 
-Oxygen icon theme
+Oxygen icon theme as a jar dependency.
 
-## Introduction
-
-Oxygen-icons is a freedesktop.org compatible icon theme.
+Project forked from https://github.com/KDE/oxygen-icons5/
