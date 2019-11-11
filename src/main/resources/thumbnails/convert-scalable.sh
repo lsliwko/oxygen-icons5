@@ -24,4 +24,3 @@ convert_scalable_for_size 96
 convert_scalable_for_size 128
 convert_scalable_for_size 256
 convert_scalable_for_size 512
-
