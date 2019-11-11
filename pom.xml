@@ -30,9 +30,10 @@
   <!--  </profiles>-->
   <!--</settings>-->
 
+  <!-- use mvn clean deploy snapshot / release -->
 
   <name>Oxygen Icons5 Thumbnails Pack</name>
-  <description>Oxygen icon theme as a jar dependency with ready-to-use icons in png and jpeg formats in the following resolutions: 8x8, 16x16, 22x22, 32x32, 48x48, 64x64, 128x128, 256x256, 512x512. Project forked from https://github.com/KDE/oxygen-icons5/</description>
+  <description>RedHat's Oxygen Icons5 theme as a jar dependency with ready-to-use icons in png and jpeg formats in the following resolutions: 8x8, 16x16, 22x22, 32x32, 48x48, 64x64, 128x128, 256x256, 512x512. Project forked from https://github.com/KDE/oxygen-icons5/</description>
   <url>https://github.com/lsliwko/oxygen-icons5-pack</url>
  
   <licenses>
