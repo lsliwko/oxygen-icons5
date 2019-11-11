@@ -31,7 +31,7 @@
   <!--  </profiles>-->
   <!--</settings>-->
 
-  <!-- upload public key: gpg --keyserver hkp://pool.sks-keyservers.net --send-keys XXXXXXXXXXXX -->
+  <!-- upload public key: gpg - -keyserver hkp://pool.sks-keyservers.net - -send-keys XXXXXXXXXXXX -->
 
   <!-- release: mvn clean deploy snapshot / release -->
 
