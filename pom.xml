@@ -2,9 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axisapplications</groupId>
   <artifactId>oxygen-icons5-pack</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
- 
+
+  <!-- Guide at https://central.sonatype.org/pages/apache-maven.html#deploying-to-ossrh-with-apache-maven-introduction -->
+  <!-- create settings.xml in .m2 folder -->
+
   <name>Oxygen Icons Thumbnails Pack</name>
   <description>Oxygen icon theme as a jar dependency with ready-to-use icons in png and jpeg formats in the following resolutions: 8x8, 16x16, 22x22, 32x32, 48x48, 64x64, 128x128, 256x256, 512x512. Project forked from https://github.com/KDE/oxygen-icons5/</description>
   <url>https://github.com/lsliwko/oxygen-icons5-pack</url>
@@ -18,9 +21,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:https://github.com/lsliwko/oxygen-icons5-pack.git</connection>
-    <developerConnection>scm:git:https://github.com/lsliwko/oxygen-icons5-pack.git</developerConnection>
-    <url>https://github.com/lsliwko/oxygen-icons5-pack/tree/${project.scm.tag}</url>
+    <connection>scm:git:git@github.com:lsliwko/oxygen-icons5-pack.git</connection>
+    <developerConnection>scm:git:git@github.com:lsliwko/oxygen-icons5-pack.git</developerConnection>
+    <url>https://github.com/lsliwko/oxygen-icons5-pack</url>
     <tag>master</tag>
   </scm>
 
@@ -41,8 +44,46 @@
     </resources>
     <plugins>
       <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.8</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9.1</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.6</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
@@ -63,7 +104,7 @@
     </snapshotRepository>
     <repository>
       <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
 
