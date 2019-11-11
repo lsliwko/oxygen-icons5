@@ -2,11 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axisapplications</groupId>
   <artifactId>oxygen-icons5-pack</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <!-- Guide at https://central.sonatype.org/pages/apache-maven.html#deploying-to-ossrh-with-apache-maven-introduction -->
-  <!-- create settings.xml in .m2 folder: -->
+
+  <!-- Create settings.xml in .m2 folder: -->
   <!--<settings>-->
   <!--  <servers>-->
   <!--    <server>-->
@@ -23,14 +24,16 @@
   <!--      </activation>-->
   <!--      <properties>-->
   <!--        <gpg.executable>gpg2</gpg.executable>-->
-  <!--        <gpg.keyname>****</gpg.keyname>-->
+  <!--        <gpg.keyname>XXXXXXXXXXXXXXXX</gpg.keyname>-->
   <!--        <gpg.passphrase>****</gpg.passphrase>-->
   <!--      </properties>-->
   <!--    </profile>-->
   <!--  </profiles>-->
   <!--</settings>-->
 
-  <!-- use mvn clean deploy snapshot / release -->
+  <!-- upload public key: gpg --keyserver hkp://pool.sks-keyservers.net --send-keys XXXXXXXXXXXX -->
+
+  <!-- release: mvn clean deploy snapshot / release -->
 
   <name>Oxygen Icons5 Thumbnails Pack</name>
   <description>RedHat's Oxygen Icons5 theme as a jar dependency with ready-to-use icons in png and jpeg formats in the following resolutions: 8x8, 16x16, 22x22, 32x32, 48x48, 64x64, 128x128, 256x256, 512x512. Project forked from https://github.com/KDE/oxygen-icons5/</description>
