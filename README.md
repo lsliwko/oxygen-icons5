@@ -6,3 +6,12 @@ Project forked from https://github.com/KDE/oxygen-icons5/
 
 To recreate icons use src/main/resources/thumbnails/convert-scalable.sh.
 Requires librsvg and ImageMagick.
+
+To include in project:
+
+```
+libraryDependencies += "com.axisapplications" % "oxygen-icons5-pack" % "1.0.0"
+```
+
+
+If you want anything added, please email me: lsliwko@gmail.com
