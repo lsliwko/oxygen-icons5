@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axisapplications</groupId>
   <artifactId>oxygen-icons5-pack</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <!-- Guide at https://central.sonatype.org/pages/apache-maven.html#deploying-to-ossrh-with-apache-maven-introduction -->

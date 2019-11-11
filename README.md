@@ -10,7 +10,7 @@ Requires librsvg and ImageMagick.
 To include in project:
 
 ```
-libraryDependencies += "com.axisapplications" % "oxygen-icons5-pack" % "1.0.0"
+libraryDependencies += "com.axisapplications" % "oxygen-icons5-pack" % "1.0.1"
 ```
 
 
